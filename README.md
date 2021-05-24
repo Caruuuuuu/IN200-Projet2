@@ -40,3 +40,7 @@ Niveau 2:
 -	Pour relancer une partie cliquer à nouveau sur GO-niveau2.
 -	Pour afficher les 10 meilleurs scores du niveau 2, cliquer sur 10 best Niveau2
 
+P.S. : Si jamais le programme ne s'affiche pas sur VScode, utilisez un exploitant python autre (idle, Pyscritper, Pyzo, EduPython...etc) Le programme fonctionne correctement sur Vscode, Pyscripter et Idle donc en cas de problème changez simplement d'exploitant. ( Idle étant installé de base si vous possèdez une version de python 3.X.X)
+
+De même, si jamais les mots écrits en blancs ne se voient pas correctement, c'est surement à cause d'une erreur de lecture liée à l'exploitant, merci de votre compréhension...
+
