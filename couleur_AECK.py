@@ -22,6 +22,8 @@ def start_niveau2():
   affichage_mots_multiples()
 
 
+##Partie faite par Mattéo et Bryan
+
 def reinitialiser():
   #réinitialise le jeu niveau 1 en effaçant le dernier mot et en remettant le compte à rebours au temps maximum et le score à 0
   global compteur_rebours, compteur, ScoreLabel2,timerLabel2, Mot, a, list_affich_mots
@@ -53,6 +55,7 @@ def reinitialiser2():
   timerLabel2.place(x=360, y=110)
   a=0
 
+##Partie faite par Sofiya
 
 def affichage_boutons():
   #affiche les boutons de couleur et le mot pour le niveau 1
@@ -74,6 +77,8 @@ def affichage_boutons():
   Mot=tk.Label(racine, text=listNo[Rand2],foreground=listCo[Rand],font=("Arial",30))
   Mot.place(x=250,y=150)
   a=1
+
+##Partie faite par Bryan
 
 def decompte():
   #lance le compte à rebours pour le niveau 1 et quand il arrive à 0 enregistre le score dans le fichier scores
@@ -120,7 +125,7 @@ def decompte2():
       fic2.write(str(list_scores2[i])+" ")
     fic2.close()
 
-
+##Partie faite par Cyrian
 
 def red():
   #niveau 1: ajoute un point au score si le mot était rouge et lance la fonction du changement de mot
@@ -193,6 +198,8 @@ def white():
     ScoreLabel2.place(x=300,y=80)
   changement_mot()
 
+##Partie faite par Mattéo
+
 def changement_mot():
   #efface le mot du niveau 1 et en remet un nouveau de texte et couleur au hasard
   global Mot, Rand, Rand2, a
@@ -202,6 +209,8 @@ def changement_mot():
     Rand2=rd.randint(0,6)
     Mot= tk.Label(racine, text=listNo[Rand2],foreground=listCo[Rand],font=("Arial",30))
     Mot.place(x=250,y=150)
+
+##Partie faite par Antoine et Cyrian
 
 def meilleurs():
   #affiche les 10 meilleurs scores du niveau 1
@@ -225,6 +234,8 @@ def meilleurs2():
   print(list[-10:])
   fic2.close()
 
+##Partie faite par Mattéo
+
 def affichage_mots_multiples():
   #affiche 3 mots pour le niveau 2
   global a, list_mots, listCo, listNo, list_affich_mots
@@ -237,6 +248,7 @@ def affichage_mots_multiples():
     list_mots.append(listCo[Rand])
   a=1
 
+##Partie faite par Sofiya
 
 def affichage_boutons2():
   #affiche les boutons de couleur pour le niveau 2
@@ -255,6 +267,8 @@ def affichage_boutons2():
   Boutonwhite=tk.Button(racine, text=listCo[6],background="white",command=white2)  #Boutons usuels
   Boutonwhite.place(x=425,y=280)
 
+
+##Partie faite par Cyrian et Antoine
 
 def red2():
   #niveau 2: ajoute rouge à la liste list_couleur et lance la fonction score2
@@ -319,7 +333,7 @@ def score2():
     affichage_mots_multiples()
 
 
-#programme principal
+#programme principal fait par Antoine et Sofiya
 
 score=0
 nb_clics=0
